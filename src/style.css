@@ -46,7 +46,10 @@ html {
 }
 
 .topofsite .title:hover{
-    color: blue;
+    color: white;
+    background-color: blue;
+    border: solid 1px;
+    border-radius: 8px;
 }
 
 .topofsite .menu {
@@ -61,4 +64,7 @@ html {
 .topofsite .navmenu .menu .item a:hover {
     background-color: blue;
     color: white;
+    border: solid 1px;
+    transition: 0.3s ease-in-out;
+    border-radius: 8px;
 }
