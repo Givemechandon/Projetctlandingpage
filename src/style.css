@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Rubik+Bubbles&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -22,14 +24,14 @@ html {
 }
 
 .topofsite .logotipo img {
-    width: 13%;
+    width: 12%;
 }
 
 .topofsite {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 0;
+    padding: 6px 0;
     margin: 0 auto;
 }
 
@@ -43,13 +45,12 @@ html {
     margin-left: 10px;
     font-size: 17px;
     transition: 0.3s ease-in-out;
+    font-family: Arvo, sans-serif;
 }
 
 .topofsite .title:hover{
-    color: white;
-    background-color: blue;
-    border: solid 1px;
-    border-radius: 8px;
+    border-bottom: blue solid 1px;
+    color: blue;
 }
 
 .topofsite .menu {
@@ -57,14 +58,75 @@ html {
 }
 
 .topofsite .navmenu .menu .item {
-    margin: 15px;
+    margin: 18px;
     transition: 0.3s ease-in-out;
+    font-family: Arvo, sans-serif;
 }
 
 .topofsite .navmenu .menu .item a:hover {
-    background-color: blue;
-    color: white;
-    border: solid 1px;
+    border-bottom: blue solid 1px;
+    color: blue;
     transition: 0.3s ease-in-out;
-    border-radius: 8px;
+    font-family: Arvo, sans-serif;
+}
+
+#bannerpanel .panel {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#bannerpanel .panel .banner img {
+    display: block;
+    width: 100%;
+    height: 68%;
+    opacity: 110%;
+}
+
+#bannerpanel .panel .banner h1 {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white; 
+    font-size: 25px; 
+    font-weight: bold;
+    text-align: center;
+    font-family: Arvo, sans-serif;
+    font-size: 38px;
+    transition: 0.3s ease-in-out;
+}
+
+#bannerpanel .panel .banner h1:hover{
+    color: #000;
+    opacity: 50%;
+}
+
+#bannerpanel .panel .banner button {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;   
+    font-weight: bold;
+    text-align: center;
+    font-family: Arvo, sans-serif;
+    font-size: 23px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+}
+
+#bannerpanel::before {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
 }
