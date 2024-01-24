@@ -132,3 +132,23 @@ html {
     color: #000;
 }
 
+section.project {
+    padding-top: 5px;
+}
+
+section.project .container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+section.project .container .project-card {
+    border: 1px solid #ffb500;
+    padding: 10px 20px;
+  }
+
+  section.project .container .project-card .languages {
+    margin: 0;
+    font-style: italic;
+    font-size: 10px;
+  }
