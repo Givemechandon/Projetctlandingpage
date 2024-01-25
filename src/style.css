@@ -14,7 +14,6 @@ a {
     text-decoration: none !important;
 }
 
-
 ul {
     list-style: none;
 }
@@ -79,6 +78,7 @@ html {
     width: auto;
     height: 60%;
     width: auto;
+    border: solid 2px #000;
 }
 
 #bannerpanel .panel .banner img {
@@ -132,23 +132,74 @@ html {
     color: #000;
 }
 
-section.project {
-    padding-top: 5px;
+section.project .title-projects h1 {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 44px;
 }
 
 section.project .container {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 35px;
+    justify-content: center;
 }
 
 section.project .container .project-card {
-    border: 1px solid #ffb500;
-    padding: 10px 20px;
-  }
+    position: relative;
+    width: 440px;
+    height: 500px;
+    margin: 25px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
 
-  section.project .container .project-card .languages {
-    margin: 0;
-    font-style: italic;
-    font-size: 10px;
-  }
+.container .project-card .content-card {
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .project-card:hover .content-card {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container .project-card .content-card img {
+    border-radius: 10px;
+}
+
+.container .project-card:hover .content-card .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+    padding-bottom: 10px;
+    opacity: 70%;
+    transition: 0.3s ease-in-out;
+}
+
+.container .project-card:hover .content-card .button:hover {
+    opacity: 100%;
+}
+
+.container .project-card:hover .content-card .button a {
+    color: #000;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 18px;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
