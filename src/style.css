@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Rubik+Bubbles&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Dancing+Script:wght@500;600&family=Rubik+Bubbles&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -38,6 +40,7 @@ html {
     display: flex;
     text-transform: uppercase;
     align-items: center;
+    width: 70%;
 }
 
 .topofsite .title {
@@ -203,3 +206,42 @@ section.project .container .project-card {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
+#about-us .title-aboutus {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+}
+
+#about-us .title-aboutus h1 {
+    font-weight: bold;
+    font-size: 44px;
+    padding: 15px;
+}
+
+#about-us .container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+}
+
+#about-us .container .bio .content-bio .text-about {
+    display: flex;
+    overflow: hidden;
+}
+
+#about-us .container .bio .content-bio .text-about {
+    font-family: 'Dancing Script', cursive;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#about-us .container .bio .content-bio img {
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+#about-us .container .bio .content-bio p {
+    padding-top: 5px;
+}
